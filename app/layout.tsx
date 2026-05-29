@@ -24,22 +24,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Apply — Legacy Labs Inner Circle",
+  title: "Free AI Operator Roadmap",
   description:
-    "Apply to join Legacy Labs Inner Circle and build your AI automation agency with the AI Operator Method™. Get a free personalized gameplan instantly.",
+    "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
   metadataBase: new URL("https://legacylabs.club"),
   openGraph: {
-    title: "Apply — Legacy Labs Inner Circle",
+    title: "Free AI Operator Roadmap",
     description:
-      "Apply to Legacy Labs Inner Circle. Get a free AI Operator Gameplan tailored to your exact stage and bottleneck.",
+      "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
     type: "website",
     siteName: "Legacy Labs Inner Circle",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Apply — Legacy Labs Inner Circle",
+    title: "Free AI Operator Roadmap",
     description:
-      "Apply to Legacy Labs Inner Circle. Get a free AI Operator Gameplan tailored to your exact stage.",
+      "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
   },
   robots: {
     index: true,

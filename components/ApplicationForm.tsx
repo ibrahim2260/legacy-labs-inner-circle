@@ -129,6 +129,31 @@ export function ApplicationForm({ onSubmit }: ApplicationFormProps) {
         <ProgressBar current={currentStep + 1} total={totalSteps} />
       </div>
 
+      {/* Hero copy — step 1 only */}
+      <AnimatePresence>
+        {currentStep === 0 && (
+          <motion.div
+            key="hero"
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className="w-full max-w-lg text-center mb-8"
+          >
+            <p className="text-[11px] font-mono text-cyan-primary tracking-widest uppercase mb-3">
+              Free AI Operator Roadmap
+            </p>
+            <h1 className="font-display text-2xl sm:text-3xl font-bold text-text-primary leading-snug text-balance mb-3">
+              Get your custom AI Operator Roadmap — built for exactly where you are right now.
+            </h1>
+            <p className="text-sm text-text-secondary leading-relaxed text-balance">
+              Answer a few quick questions and I&apos;ll map your path from where you are
+              today to building, scaling, and winning with AI... in under 60 seconds.
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Step content */}
       <div className="w-full max-w-lg">
         <AnimatePresence mode="wait" onExitComplete={() => handleStepView(currentStep)}>

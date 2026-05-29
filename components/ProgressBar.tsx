@@ -39,7 +39,7 @@ export function ProgressBar({ current, total }: ProgressBarProps) {
 
       {/* Step label */}
       <p className="mt-2 text-[11px] font-mono text-text-muted tracking-widest uppercase">
-        Step {current} of {total}
+        Building your roadmap · {current} of {total}
       </p>
     </div>
   );
