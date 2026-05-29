@@ -66,15 +66,21 @@ export function ResultsScreen({ data, contactName, onReset }: ResultsScreenProps
             className="mb-8"
           >
             {/* Qualified badge */}
-            <div className="flex items-center gap-2 mb-5">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-primary opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-primary" />
-              </span>
-              <span className="text-xs font-mono text-cyan-primary tracking-widest uppercase">
-                Application Qualified
-              </span>
-            </div>
+            {(() => {
+              const firstName = contactName.trim().split(/\s+/)[0];
+              const label = firstName ? `Built for you, ${firstName}` : "Built for you";
+              return (
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-primary opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-primary" />
+                  </span>
+                  <span className="text-xs font-mono text-cyan-primary tracking-widest uppercase">
+                    {label}
+                  </span>
+                </div>
+              );
+            })()}
 
             <h1 className="font-display text-2xl sm:text-3xl font-bold text-text-primary leading-snug text-balance mb-4">
               Your AI Operator Roadmap is ready —<br className="hidden sm:block" /> here's your next move.
