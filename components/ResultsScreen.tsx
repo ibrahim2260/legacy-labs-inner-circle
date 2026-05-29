@@ -38,18 +38,7 @@ export function ResultsScreen({ data, contactName, onReset }: ResultsScreenProps
 
   // Shared top bar
   const TopBar = (
-    <div className="w-full max-w-2xl flex items-center justify-between mb-10">
-      <div className="flex items-center gap-2">
-        <div
-          className="w-6 h-6 rounded flex items-center justify-center text-[10px] font-display font-bold text-white border border-blue-dim"
-          style={{ background: "linear-gradient(135deg, #0E2260 0%, #1A3B8A 100%)" }}
-        >
-          LL
-        </div>
-        <span className="text-xs font-mono text-text-muted tracking-wider">
-          Inner Circle
-        </span>
-      </div>
+    <div className="w-full max-w-2xl flex items-center justify-end mb-10">
       {FUNNEL_CONFIG.showResetButton && (
         <button
           onClick={onReset}

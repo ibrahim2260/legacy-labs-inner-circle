@@ -91,7 +91,7 @@ export function ApplicationForm({ onSubmit }: ApplicationFormProps) {
     <div className="min-h-screen flex flex-col items-center justify-start pt-12 px-5 pb-16">
       {/* Header */}
       <div className="w-full max-w-lg mb-8">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center mb-4">
           {/* Back button */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -109,21 +109,6 @@ export function ApplicationForm({ onSubmit }: ApplicationFormProps) {
               ← Back
             </Button>
           </motion.div>
-
-          {/* Brand */}
-          <div className="flex items-center gap-2">
-            <div
-              className="w-6 h-6 rounded flex items-center justify-center text-[10px] font-display font-bold text-white border border-blue-dim"
-              style={{
-                background: "linear-gradient(135deg, #0E2260 0%, #1A3B8A 100%)",
-              }}
-            >
-              LL
-            </div>
-            <span className="text-xs font-mono text-text-muted tracking-wider">
-              Inner Circle
-            </span>
-          </div>
         </div>
 
         <ProgressBar current={currentStep + 1} total={totalSteps} />
