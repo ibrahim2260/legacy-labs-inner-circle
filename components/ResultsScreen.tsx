@@ -118,14 +118,13 @@ export function ResultsScreen({ data, contactName, onReset }: ResultsScreenProps
                 }}
               >
                 <p className="text-[10px] font-mono text-cyan-primary tracking-widest uppercase mb-1">
-                  Free · No pitch · Fit-reviewed
+                  Free · 30 Min · AI Strategy
                 </p>
                 <h2 className="font-display text-lg sm:text-xl font-bold text-text-primary">
                   Book your free build call.
                 </h2>
                 <p className="text-xs text-text-secondary mt-1 leading-relaxed">
-                  This is a real conversation with my team — not a sales pitch. We
-                  figure out if this is the right fit on both sides.
+                  On this call we'll take your roadmap and turn it into a real plan for your exact situation. If it's a fit, we'll show you how we'd help you build it inside the Inner Circle. If it's not, we'll tell you straight. Either way, you leave with more clarity than you came in with.
                 </p>
               </div>
 
