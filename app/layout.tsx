@@ -23,11 +23,7 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? process.env.NEXT_PUBLIC_SITE_URL
-  : process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "https://legacylabs.club";
+const siteUrl = "https://go.aiagencies.app";
 
 export const metadata: Metadata = {
   title: "Free AI Operator Roadmap",
