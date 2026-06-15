@@ -23,23 +23,38 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "https://legacylabs.club";
+
 export const metadata: Metadata = {
   title: "Free AI Operator Roadmap",
   description:
     "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
-  metadataBase: new URL("https://legacylabs.club"),
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Free AI Operator Roadmap",
     description:
       "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
     type: "website",
     siteName: "Legacy Labs Inner Circle",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Get Your Free AI Operator Roadmap — Legacy Labs Inner Circle",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Free AI Operator Roadmap",
     description:
       "Answer a few quick questions and get a custom AI Operator Roadmap built for exactly where you are right now — your path to building, scaling, and winning with AI.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
