@@ -120,10 +120,10 @@ export default async function Image() {
             />
             <span
               style={{
-                fontSize: 15,
-                fontWeight: 400,
+                fontSize: 36,
+                fontWeight: 700,
                 color: "#3EC9F5",
-                letterSpacing: "0.2em",
+                letterSpacing: "0.15em",
                 textTransform: "uppercase",
               }}
             >
@@ -183,16 +183,15 @@ export default async function Image() {
           {/* Brand */}
           <p
             style={{
-              marginTop: 20,
-              fontSize: 15,
+              marginTop: 24,
+              fontSize: 32,
               fontWeight: 400,
-              color: "#4A6A9B",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
+              color: "#7FA3D4",
+              letterSpacing: "0.04em",
               textAlign: "center",
             }}
           >
-            Legacy Labs Inner Circle · Ibrahim Ansari
+            - Created by Ibrahim Ansari
           </p>
         </div>
 
