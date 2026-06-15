@@ -143,7 +143,7 @@ export default async function Image() {
           >
             <span
               style={{
-                fontSize: 76,
+                fontSize: 86,
                 fontWeight: 700,
                 color: "#E8F1FF",
                 lineHeight: 1.05,
@@ -155,7 +155,7 @@ export default async function Image() {
             </span>
             <span
               style={{
-                fontSize: 76,
+                fontSize: 86,
                 fontWeight: 700,
                 lineHeight: 1.05,
                 textAlign: "center",
@@ -169,25 +169,10 @@ export default async function Image() {
             </span>
           </div>
 
-          {/* Subtext */}
-          <p
-            style={{
-              fontSize: 26,
-              fontWeight: 400,
-              color: "#7FA3D4",
-              textAlign: "center",
-              margin: 0,
-              lineHeight: 1.5,
-              maxWidth: 700,
-            }}
-          >
-            Find out exactly where your AI agency is leaking and what to fix first.
-          </p>
-
           {/* Divider line */}
           <div
             style={{
-              marginTop: 44,
+              marginTop: 48,
               width: 480,
               height: 1,
               background:
